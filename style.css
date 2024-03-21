@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+html, body{
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    align-items:center;
+}
+
+.clear{
+    clear: both;
+}
+
+header{
+    background-color: #57ABF8;
+    padding: 10px 2%;
+    width: 100%;
+}
+
+.container-logo{
+    width: 40%;
+}
+
+.logo{
+    float: left;
+    width: 160px;
+    height: 90px;
+    background-image: url(./sem\ fundo1.png);
+    background-size: 100% auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container-text{
+    width: 60%;
+    display: inline-flex;
+}
+
+.header-text{
+    align-items: center;
+    width: 100%;
+}
+.header-text a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+a.special-text{
+    padding: 10px;
+    border-radius: 12px;
+    background-color: black;
+    color: #57ABF8;
+}
+
+.text-color{
+    color: #57ABF8;
+}
+
+.header-text a:hover{
+    border-bottom: 2px solid #FFDD33;
+ }
+
+ a.special-text:hover{
+    border-bottom: 0px;
+}
+
+.inicio{
+    padding: 10px 2%;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.container-text-inicio{
+    width: 60%;
+    display: inline-block;
+}
+
+.inicio-text h1{
+    font-size: 70px;
+}
+
+.container-text-inicio p{
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.container-img{
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    
+}
+
+.container-img img{
+    width: 300px;
+}
+
+.sobre{
+    background-color: #57ABF8;
+    padding: 10px 2%;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.container-text-sobre{
+    margin-top: 20px;
+}
+
+.container-text-sobre h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.container-text-sobre p{
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.habilidades{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+ }
+ 
+ .habilidades h2{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 30px;
+ }
+
+ .container-box-habilidades p, .container-box-habilidades i{
+    font-size: 40px;
+ }
+ 
+ .container-box-habilidades{
+    width: 32%;
+    height: 150px;
+    background-color: #ccc;
+    margin:10px 5px;
+    display: inline-block;
+    padding: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+ }
+ 
+ #html:hover{
+    background-color: orange;
+ }
+
+ #css:hover{
+    background-color: blue;
+ }
+
+ #javascript:hover{
+    background-color: yellow;
+ }
+
+ .container-box-habilidades:hover{
+    transform: scale(1.05);
+ }
+ footer{
+    width: 100%;
+    padding: 10px 2%;
+    background-color: black;
+    text-align: center;
+ }
+
+ .text-footer{
+    width: 100%;
+    text-align: center;
+    color: white;
+ }
+
+ @media only screen and (max-width: 950px) {
+    header{display: inline-block; width:100%; padding: 10px; text-align: center;}
+
+    .logo{width:100%; text-align: center;}
+    
+    .header-text{width:100%; float: right;}
+    
+    .logo-menu img{
+        height: 80px;
+    }
+    
+    .header-text a{
+       font-weight: bold;
+       color: black;
+       display: inline-block;
+       margin: 0 10px;
+       text-decoration: none;
+       margin-top: 20px;
+       margin-left: 30px;
+    }
+    a.special-text{color: #57ABF8;}
+   
+
+    .header-text a {
+        font-size: 16px; /* Reduzido o tamanho do texto do menu para telas menores */
+    }
+
+    .container-text {
+        flex-direction: column; /* Alterado para empilhar verticalmente em telas menores */
+    }
+
+    .container-text-inicio h1 {
+        font-size: 32px; /* Reduzido o tamanho da fonte para telas menores */
+    }
+
+    .container-img {
+        display: block; /* Exibe a imagem em telas menores */
+        width: 100%;
+        text-align: center;
+    }
+
+    .container-img img {
+        width: 80%; /* Reduzido o tamanho da imagem para telas menores */
+    }
+
+    .container-box-habilidades{
+        width: 100%;
+    }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boni Websites</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/006c5c5580.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const target = document.querySelector(this.getAttribute('href'));
+
+            window.scrollTo({
+                top: target.offsetTop,
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
+<body>
+    <header>
+        <div class="container"> 
+            <div class="container-logo"><div class="logo"></div></div>
+            <div class="container-text">
+            <div class="header-text">
+                <a href="#secao1">Início</a>
+                <a href="#secao2">Sobre</a>
+                <a href="#secao3">Habilidades</a>
+                
+                <span><a class="special-text" href="https://wa.me/5527992745297">Entre em contato</a></span>
+               </div><!--header-text-->
+            </div><!--container-text-->
+            <div class="clear"></div>
+        </div><!--container-header-->
+    </header>
+
+    <section id="secao1" class="inicio">
+        <div class="container">
+            <div class="container-text-inicio">
+            <div class="inicio-text">
+                <h1>Olá, <br>Me chamo Davi Boni <br>Desenvolvedor Front-end</h1>
+           </div><!--container-text-inicio-->
+                <p>Estou aqui para transformar suas ideias em realidade visualmente deslumbrante. Desde websites responsivos até interfaces de usuário intuitivas, estou pronto para dar vida aos seus projetos com criatividade, habilidade e dedicação. Minha missão é superar suas expectativas e fornecer soluções digitais que impulsionem o sucesso do seu negócio. Entre em contato comigo hoje mesmo para dar o próximo passo rumo à sua presença online de sucesso!
+                </p>
+            </div><!--inicio-text-->
+            <div class="container-img">
+                <img src="/pc simbol.png" alt="">
+            </div>
+        </div><!--container-->
+    </section>
+
+    <section id="secao2" class="sobre">
+        <div class="container">
+            <div class="container-text-sobre">
+                <h2>O que é Desenvolvimento Front-end?</h2>
+                <p>Desenvolvimento front-end é uma das partes essenciais na criação de um site ou aplicativo. É o processo de construir a interface com a qual os usuários interagem diretamente. Os desenvolvedores front-end trabalham com tecnologias para criar elementos visuais e funcionais que os usuários veem e interagem em seus dispositivos, como computadores, tablets e smartphones.</p>
+                <h2>Porque ele é importante:</h2>
+                <p><span class="bold">1. Primeira Impressão:</span> A interface do usuário é a primeira coisa que os usuários veem ao acessar um site ou aplicativo, e uma boa experiência pode fazer toda a diferença. <br>
+
+                    <span class="bold">2. Usabilidade:</span> Uma interface bem projetada e intuitiva torna a navegação mais fácil e agradável para os usuários, aumentando a probabilidade de que eles retornem. <br>
+                    
+                    <span class="bold">3. Compatibilidade com Dispositivos:</span> Com o aumento do uso de dispositivos móveis, é crucial que um site ou aplicativo seja compatível e funcione perfeitamente em diferentes dispositivos e tamanhos de tela.</p>
+            </div><!--container-text-sobre-->
+        </div><!--container-->
+    </section><!--sobre-->
+
+    <section id="secao3" class="habilidades">
+            <div  class="container-text-habilidade">
+                <h2>Habilidades</h2>
+            </div><!--container-text-habilidade-->
+            <div id="html" class="container-box-habilidades">
+                <i class="fa-brands fa-html5"></i>
+                <p>HTML5</p>
+            </div><!--container-box-habilidades-->
+            <div id="css" class="container-box-habilidades">
+                <i class="fa-brands fa-css3-alt"></i>
+                <p>CSS3</p>
+            </div><!--container-box-habilidades-->
+            <div id="javascript" class="container-box-habilidades">
+                <i class="fa-brands fa-js"></i>
+                <p>JavaScript</p>
+            </div><!--container-box-habilidades-->
+    </section><!--habilidades-->
+
+    <footer>
+        <div class="container">
+            <div class="text-footer">
+                <h3>Informações de contato</h3>
+                <p>E-mail: boniwebsites@gmail.com</p>
+                <p>Telefone: (27) 992745297</p>
+
+            </div><!--text-footer-->
+
+        </div><!--container-->
+    </footer>
+    
+</body>
+
+
+</html>
